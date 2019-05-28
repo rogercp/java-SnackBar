@@ -30,13 +30,5 @@ public class VendingMachine
 		return this.name;
 	}
 
-	// @Override 
-	// public String toString()
-	// {
-	// 	String rtnStr="Vending Machine's id: " + id + "\n";
-	// 					"Vending Machine's name: " + name + "\n";
-
-	// 			return rtnStr;
-	// }
-
+	
 }

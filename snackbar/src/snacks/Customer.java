@@ -43,13 +43,4 @@ public class Customer
         this.cash-=snack.getCost(quantity);
     }
 
-
-	// @Override
- //    public String toString()
- //    {
- //        String rtnStr= "Customer's id: " + id + "\n" +
- //                	"Customer's name: " + name + "\n" +
- //                	"Customer's current amount of cash: " + cash + "\n";
-
- //        return rtnStr;
 }
