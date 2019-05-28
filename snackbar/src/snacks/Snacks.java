@@ -39,7 +39,7 @@ public class Snacks
         this.quantity += quantity;
     }
 
-    public double sellSnack(int quantity)
+    public void sellSnack(int quantity)
     {
         if(quantity>0)
         {
@@ -68,3 +68,8 @@ public class Snacks
         return rtnStr;
     }
 }
+
+
+
+
+

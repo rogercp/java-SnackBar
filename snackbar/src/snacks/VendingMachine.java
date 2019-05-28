@@ -4,7 +4,7 @@ package snacks;
 public class VendingMachine
 {
 	//fields
-	private static int MaxId=0
+	private static int MaxId=0;
 	private int id;
 	private String name;
 
@@ -20,7 +20,7 @@ public class VendingMachine
 		return this.id;
 	}
 
-	public String setname(String name)
+	public void setname(String name)
 	{
 		this.name=name;
 	}
@@ -30,13 +30,13 @@ public class VendingMachine
 		return this.name;
 	}
 
-	@Override 
-	public String toString()
-	{
-		String rtnStr="Vending Machine's id: " + id + "\n";
-						"Vending Machine's name:" + name + "\n";
+	// @Override 
+	// public String toString()
+	// {
+	// 	String rtnStr="Vending Machine's id: " + id + "\n";
+	// 					"Vending Machine's name: " + name + "\n";
 
-				return rtnStr;
-	}
+	// 			return rtnStr;
+	// }
 
 }

@@ -37,18 +37,19 @@ public class Customer
     }
 
     
-    public void buySnack(int quantity, Snack snack)
+    public void buySnack(int quantity, Snacks snack)
     {
-        
+        snack.sellSnack(quantity);
+        this.cash-=snack.getCost(quantity);
     }
 
 
-	@Override
-    public String toString()
-    {
-        String rtnStr= "Customer's id: " + id + "\n" +
-                	"Customer's name: " + name + "\n" +
-                	"Customer's current amount of cash: " + cash + "\n";
+	// @Override
+ //    public String toString()
+ //    {
+ //        String rtnStr= "Customer's id: " + id + "\n" +
+ //                	"Customer's name: " + name + "\n" +
+ //                	"Customer's current amount of cash: " + cash + "\n";
 
-        return rtnStr;
+ //        return rtnStr;
 }

@@ -12,7 +12,7 @@ public class Main
 		VendingMachine officeVendingMachine= new VendingMachine("Office");
 
 		Snacks chips= new Snacks ("Chips", 35, 1.75, foodVendingMachine.getId());
-		Snacks chocolateBar = new Snacks ("Chocolate Bar", 36, 1.00. foodVendingMachine.getId());
+		Snacks chocolateBar = new Snacks ("Chocolate Bar", 36, 1.00, foodVendingMachine.getId());
 		Snacks pretzels =new Snacks ("Pretzel", 30, 2.00,foodVendingMachine.getId());
 		Snacks soda= new Snacks ("Soda", 24, 2.50, drinkVendingMachine.getId());
 		Snacks water= new Snacks ("Water", 20 ,2.75, drinkVendingMachine.getId());
@@ -25,10 +25,7 @@ public class Main
 		// Add 12 more items to snack 3. Print quantity of snack 3.
 		// Customer 2 buys 3 of snack 3. Print Customer 2 Cash on hand. Print quantity of snack 3.
 
-		jane.buySnack(3,soda);
-		jane.buySnack(1,pretzel);
-		bob.buySnack(2,soda);
-
+		System.out.println("processing Snack Requests");
 	}
 
 	public static void main(String[] args)
