@@ -7,22 +7,18 @@ public class Customer
 	private String name;
 	private double cash;
 
-	public Consumer (String name, double cash)
+	public Customer (String name, double cash)
 	{
 		maxId++;
-		id=maxId;
+		this.id=maxId;
 		this.name=name;
 		this.cash=cash;
 	}
-	
-    public void addCash(double cash)
-    {
-        this.cash += cash;
-    }
 
+   
     public String getName()
     {
-        return name;
+        return this.name;
     }
 
     public void setName(String name)
@@ -30,14 +26,20 @@ public class Customer
         this.name=name;
     }
 
+	public void addCash(double cash)
+    {
+        this.cash += cash;
+    }
+
     public double getCash()
     {
         return cash;
     }
 
+    
     public void buySnack(int quantity, Snack snack)
     {
-        this.cash -= snack.sellSnack(quantity);
+        
     }
 
 

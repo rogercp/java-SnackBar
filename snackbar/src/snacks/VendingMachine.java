@@ -11,13 +11,13 @@ public class VendingMachine
 	public VendingMachine (String name)
 	{
 		MaxId++;
-		id=MaxId;
+		this.id=MaxId;
 		this.name=name;
 	}
 
 	public int getId()
 	{
-		return id;
+		return this.id;
 	}
 
 	public String setname(String name)

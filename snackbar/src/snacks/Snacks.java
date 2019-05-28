@@ -12,31 +12,50 @@ public class Snacks
 	public Snacks (String name, int quantity, double cost, int vendingMachineId )
 	{
 		maxId++;
-		id=maxId;
+		this.id=maxId;
 		this.name=name;
 		this.quantity=quantity;
 		this.cost=cost;
 		this.vendingMachineId=vendingMachineId;
 	}
 
+	public int getId(int id)
+	{
+		return id;
+	}
 	public void setName(String name)
     {
         this.name = name;
     }
-
+    public String getName()
+    {
+    	return name;
+    }
     public int getQuantity() {
         return quantity;
     }
 
-    public void addQuantity(int quantity) {
+    public void setQuantity(int quantity) {
         this.quantity += quantity;
     }
 
-    public double sellSnacks(int quantity)
+    public double sellSnack(int quantity)
     {
-        this.quantity -= quantity;
-        return quantity * cost;
+        if(quantity>0)
+        {
+        	if(this.quantity>=quantity)
+        	{
+        		this.quantity -=quantity;
+        	}
+        }
     }
+    
+    public double getCost(double quantity)
+    {
+    	return this.cost*quantity;
+    }
+
+
 
     @Override
     public String toString()
