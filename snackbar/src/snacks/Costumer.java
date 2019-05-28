@@ -6,4 +6,12 @@ public class Customer
 	private int id;
 	private String name;
 	private double cash;
+
+	public Consumer (String name, double cash)
+	{
+		maxId++;
+		id=maxId;
+		this.name=name;
+		this.cash=cash;
+	}
 }
